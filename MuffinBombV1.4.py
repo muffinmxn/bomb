@@ -9,7 +9,7 @@ if c == 'MuffinBomb12':
   print('Authenticating...')
   time.sleep(2)
   d=str(input('Press Enter'))
-  print('Your first name is',a,'and your last name is',b,'')
+  print('Logged in as',a,'',b,'')
   
 else:
   print('Authenticating...')
@@ -18,10 +18,30 @@ else:
   time.sleep(1)
   e=str(input('Press Enter'))
   exit()
-  
+
+banner2 = """
++++++++++++++++++++++++++++++++++++++++
+|       MuffinMultiTool         |
+|          Options:             |
++++++++++++++++++++++++++++++++++++++++
+
+(1) Muffin's Email Bomber
+(2) Experimental Password Guesser
+"""
+
+print(banner2,'\n')
+time.sleep(0.5)
+f=str(input('Enter Option: '))
+
+if f == '1':
+	print('Loading MuffinBomb..')
+	time.sleep(2)
+	
+	
+	
 banner = """
 +++++++++++++++++++++++++++++++++++++++++++
-|       Author : MuffinMxnYT              |
+|       Author : MuffinMxnYT               |
 |       Channel : MuffinMxn               |
 +++++++++++++++++++++++++++++++++++++++++++
         Enable the permissin here 
