@@ -3,13 +3,15 @@ import time
 
 a=str(input('Enter First Name Here: '))
 b=str(input('Enter Last Name Here: '))
-c=str(input('Enter Auth Code: '))
 
-if c == 'MuffinBomb12':
-  print('Authenticating...')
-  time.sleep(2)
-  d=str(input('Press Enter'))
-  print('Logged in as',a,'',b,'')
+while True:
+	c=str(input('Enter Auth Code: '))
+	if c == 'MuffinBomb12':
+	 print('Authenticating...')
+	 time.sleep(2)
+	 d=str(input('Press Enter'))
+	 print('Logged in as',a,'',b,'')
+	 break
   
 else:
   print('Authenticating...')
@@ -17,14 +19,12 @@ else:
   print('Rerun code with correct authentification.')
   time.sleep(1)
   e=str(input('Press Enter'))
-  exit()
 
 banner2 = """
 +++++++++++++++++++++++++++++++++++++++
 |       MuffinMultiTool         |
 |          Options:             |
 +++++++++++++++++++++++++++++++++++++++
-
 (1) Muffin's Email Bomber
 (2) Experimental Password Guesser
 """
